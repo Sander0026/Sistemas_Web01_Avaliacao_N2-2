@@ -83,8 +83,7 @@ Set-ExecutionPolicy RemoteSigned -Scope Process
 python app.py 
 ```
 
-**➡️ Terminal 2: O worker**
-
+**➡️ Terminal 2: O worker_email**
 
 ```bash
 Set-ExecutionPolicy RemoteSigned -Scope Process
@@ -92,7 +91,7 @@ Set-ExecutionPolicy RemoteSigned -Scope Process
 python .\workers\worker_email.py 
 ```
 
-**➡️ Terminal 3: O workers**
+**➡️ Terminal 3: O worker_ordens**
 
 ```bash
 Set-ExecutionPolicy RemoteSigned -Scope Process
@@ -100,10 +99,10 @@ Set-ExecutionPolicy RemoteSigned -Scope Process
 python .\workers\worker_ordens.py 
 ```
 
-**➡️ Terminal 4: O worker**
+**➡️ Terminal 4: O worker_push**
 
 ```bash
 Set-ExecutionPolicy RemoteSigned -Scope Process
 .\.venv\Scripts\Activate.ps1
-
+python .\workers\worker_push.py 
 ```
