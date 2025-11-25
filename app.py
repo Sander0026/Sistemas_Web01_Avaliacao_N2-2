@@ -12,7 +12,7 @@ project_root = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(project_root)
 # --- Fim da Configuração de Path ---
 
-# --- Imports Corrigidos ---
+
 try:
     # Corrigido "lambidas" para "lambdas"
     from src.lambdas.lambda_validador import validar_ordem
